@@ -1,0 +1,15 @@
+[package]
+name = "gd32f4xx_hal"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ashwin Narayan <ashwinnarayan1994@gmail.com>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Peripheral access API for GD32F4 series microcontrollers"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+defmt = { version = "0.3.5", optional = true }
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7.3"
+document-features = "0.2"

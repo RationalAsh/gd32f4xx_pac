@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Generate the peripheral access crate for the GD32F4 family of microcontrollers
-svd2rust -i svd/patched_gd32f4xx.svd
+svd2rust -i svd/patched_gd32f4xx.svd --reexport-interrupt
 
 # Remove the old src directory and the old lib.rs file
 rm -rf src/lib.rs
